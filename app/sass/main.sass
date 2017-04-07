@@ -1,0 +1,465 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+// html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+//   margin: 0
+//   padding: 0
+//   border: 0
+//   font-size: 100%
+//   font: inherit
+//   vertical-align: baseline
+
+// // /* HTML5 display-role reset for older browsers
+
+// article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+//   display: block
+
+// body
+//   line-height: 1
+
+// ol, ul
+//   list-style: none
+
+// blockquote, q
+//   quotes: none
+
+// blockquote
+//   &:before, &:after
+//     content: ''
+//     content: none
+
+// q
+//   &:before, &:after
+//     content: ''
+//     content: none
+
+// table
+//   border-collapse: collapse
+//   border-spacing: 0
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+html
+	position: relative
+
+html, body
+	min-height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	width: 100%
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+// animation services
+
+.service_element-hidden
+	visibility: hidden
+
+.fadeInLeft, .fadeOutLeft, .fadeInRight, .fadeOutRight
+	visibility: visible	
+
+.delay-025s
+	-webkit-animation-delay: .25s
+	-moz-animation-delay: .25s
+	-o-animation-delay: .25s
+	animation-delay: .25s
+
+
+.delay-035s
+	-webkit-animation-delay: .35s
+	-moz-animation-delay: .35s
+	-o-animation-delay: .35s
+	animation-delay: .35s
+
+
+// 
+
+
+
+.top-line
+	min-height: 100px
+	.logo
+		margin-top: 20px
+
+.nav
+	display: inline-block
+	list-style-type: none
+	margin-top: 30px
+	li
+		display: inline
+		padding-left: 10px
+		a
+			text-decoration: none
+			padding: 10px
+			border-radius: 7px
+			color: #999
+			font-size: 14px
+			text-transform: uppercase
+			&:hover
+				background-color: $accent-orange
+				text-decoration: none
+
+.first-screen
+	position: relative
+	max-height: 590px
+	background-color: $accent-blue
+	h1
+		margin: 0
+		margin-top: 80px
+		text-transform: uppercase
+		color: #fff
+		font-size: 2em
+		text-align: center
+		font-family: $bold-font
+		user-select: none
+	h3
+		text-align: center
+		color: #fff
+		font-size: 14px
+		margin: 0
+		margin-bottom: 20px
+		user-select: none
+
+.request
+	input
+		width: 100%
+		font-size: 14px
+		font-family: $default-font
+		border-radius: 6px
+		outline:none
+		border: none
+		padding-left: 20px
+		&:hover
+			opacity: 0.9
+		&:focus
+			opacity: 1
+
+.request-btn
+	font-size: 14px
+
+	
+
+.btn-orange
+	background-color: $accent-orange
+	outline: none
+	border: none
+	color: #fff
+	border-radius: 4px
+	text-align: center
+	text-transform: uppercase
+	&:hover	
+		background-color: darken($accent-orange, 10%)
+	&:active
+		background-color: darken($accent-orange, 20%)
+
+.notebook
+	margin-top: 20px
+
+
+.services
+	>h2,>h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+.service
+	.service_element
+		padding-top: 20px
+	h3
+		margin: 0
+		text-transform: uppercase
+		padding-left: 80px
+	.service-text
+		padding-left: 80px
+	.fa	
+		float: left
+		padding-left: 10px
+		color: $accent-blue
+		font-size: 40px	
+		&:hover
+			color: $accent-orange		
+
+//добавить fa-spin при наведении через jq
+
+
+.about
+	background-color: #ffe0aa
+	height: 600px
+	overflow: auto
+	text-overflow: ellipsis
+	.about-bg
+		height: 600px
+		background-image: url("../img/about-bg.png")
+		background-repeat: no-repeat
+		background-size: cover
+		background-attachment: fixed
+	h2
+		text-transform: uppercase
+		color: #fff
+		padding-left: 60px
+		padding-top: 160px
+	p
+		color: #fff
+		padding-left: 60px
+		font-size: 14px
+
+
+// price block
+
+
+.price
+	padding-top: 100px
+	background-color: #e7edf3
+	.price-elements
+		margin-top: 70px
+		padding-bottom: 200px
+	h2
+		font-family: $bold-font
+	h2,h3,h4,p
+		text-align: center
+		text-transform: uppercase
+	.price-element
+		padding: 10px
+		background-color: #fff
+	.price-element-central
+		background-color: $accent-blue
+		color: #fff
+		transform: scale(1, 1.1)
+		.price-size
+			color: #fff					
+	.price-size
+		font-size: 40px
+		color: $accent-orange
+		span
+			font-size: 48px	
+	.price-text
+		font-size: 16px	
+
+.buy-btn
+	display: block
+	margin: 0 auto
+	padding: 10px 15px
+
+// how it works
+
+.howitworks
+	position: relative
+	padding-top: 100px 
+	padding-bottom: 120px
+	.howitworks-element
+		padding: 76px 35px 0 35px
+	h2,h3,h4
+		text-transform: uppercase
+		text-align: center
+		font-family: $bold-font 
+	.howitworks-text
+		font-size: 14px
+		text-align: center
+		margin-bottom: 80px
+	.fa-headphones
+		margin-left: calc(50% - 27px)
+	.fa-unlock-alt
+		margin-left: calc(50% - 19px)
+	.fa-cloud-upload
+		margin-left: calc(50% - 32px)
+	.fa-thumbs-o-up
+		margin-left: calc(50% - 25.5px)
+			
+	.howitworks-icon
+		// margin-left: calc(50% - 25px)
+		font-size: 60px
+		color: $accent-blue
+		&:hover
+			color: $accent-orange
+	.howitworks-btn
+		width: 165px
+
+.arrow1
+	position: absolute
+	top: 300px
+	left: 19vw
+
+.arrow2
+	position: absolute
+	top: 378px
+	left: 45vw
+
+.arrow3
+	position: absolute
+	top: 300px
+	right: 18vw
+
+
+// comments
+
+.comments
+	background-color: #ffc155
+	padding-top: 100px
+	padding-bottom: 150px
+	h2,h4
+		text-transform: uppercase
+		text-align: center
+		font-family: $bold-font 
+	h4
+		margin-top: 0
+		margin-bottom: 20px	
+	.comments-element
+		width: 47%
+		min-height: 244px
+		padding-top: 45px
+		margin-left: 2%
+		margin-top: 20px
+		background-color: #FFF
+	.comments-img
+		float: left	
+	.comments-text
+		padding-left: 165px
+		text-align: justify
+	.comments-job
+		text-transform: uppercase
+		text-align: center
+		font: 18px
+		color: $accent-blue
+		span
+			color: $accent-orange
+
+.comments-text:before 
+	color: $accent-blue
+	content: "\201C"
+	font-size: 3em
+	line-height: 0.1em
+	vertical-align: -.4em
+
+.comments-text:after
+	color: $accent-blue
+	content: "\201D"
+	font-size: 3em
+	line-height: 0.1em
+	vertical-align: -.4em
+		
+.contacts
+	padding-top: 100px
+	h2,h4
+		text-transform: uppercase
+		text-align: center
+	input
+		width: 100%
+		font-size: 14px
+		font-family: $default-font
+		border-radius: 6px
+		outline:none
+		border: 1px solid grey
+		padding-left: 20px
+		&:hover
+			opacity: 0.9
+		&:focus
+			opacity: 1
+	button
+		width: 100%		
+
+.map
+	position: relative
+
+
+.map-img
+	padding-top: 50px
+	display: block
+	max-width: 100%
+	width: 95%
+	height: auto
+	margin: 0 auto
+	
+.adress
+	position: absolute
+	top: 100px
+	left: calc(50% - 150px)
+	width: 300px
+	background-color: #394b50
+	border-radius : 50%
+	height: 300px
+	text-align: center
+	line-height: 1.15em
+	h3
+		text-transform: uppercase
+		padding-top: 20px
+		font-size: 16px
+		color: #fff
+	h4
+		font-size: 12px
+		color: #98a2a6
+		&:last-of-type
+			color: #d4a345
+	&:after
+		display: block
+		position : absolute
+		content : ""
+		top: 287px
+		left: calc(50% - 40px)
+		width: 0
+		height: 0
+		border-top: 20px solid #394b50
+		border-left: 40px solid transparent
+		border-right: 40px solid transparent
+
+.contacts-phone
+	padding-top: 40px
+	text-align: center
+	
+.last-row
+	width: 100%
+	position: absolute
+	bottom: 0
+	text-align: center
+	height: 40px
+	background-color: $accent-blue
+	h4
+		margin-top: 5px
+		margin-bottom: 0
+		font-size: 14px
+		vertical-align : middle
+
+.logo-footer
+	display: block
+	position: absolute
+	top: 420px
+	left: calc(50% - 25px)
+
+body 
+	padding-left: 5px
+	padding-right: 5px
+	margin-bottom : 40px
+
+.last-row
+	padding: 0	
+
+
+@import "media" // Всегда в конце

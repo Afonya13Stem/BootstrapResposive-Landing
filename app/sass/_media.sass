@@ -1,0 +1,186 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.arrow
+		width: 92px
+
+	.nav
+		li
+			a
+				font-size: 12px
+				padding : 5px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.top-line
+		.logo
+			margin-top: 10px
+			padding-left: calc(50% - 25px)
+
+	.nav
+		display: block
+		margin-top: 30px
+		padding-left: 0
+		li
+			display: block
+			padding-left: 0px
+			text-align: center
+			padding: 5px 0
+			&:hover
+					background-color: $accent-orange
+			a
+				border-radius: 7px
+				color: #999
+				font-size: 14px
+				&:hover
+					background-color: none
+	
+	.request
+		input,.request-btn
+			margin-top: 5px
+
+	.request-btn
+		width: 100%
+
+
+
+
+	.about
+		max-height: 400px
+		h2
+			padding-top: 50px
+		p
+			font-size: 16px
+	.price
+		padding-top: 0
+		.price-elements
+			margin-top: 0
+			padding-bottom: 30px
+		.price-element
+			padding: 30px 10px
+			.price-size
+				font-size: 22px
+				span
+					font-size: 40px
+			p
+				margin: 0 0
+			hr
+				margin: 5px 5px	
+				
+	.arrow
+		display: none
+	.howitworks
+		padding-top: 30px
+		padding-bottom: 30px
+		.howitworks-element
+			padding: 10px 20px
+			p
+				margin-bottom: 20px
+			
+
+	.comments
+		.comments-element
+			width: 96%
+			min-height: 244px
+			padding-top: 45px
+			margin-left: 2%
+			margin-top: 10px
+			background-color: #FFF
+
+	.comments	
+		.comments-text
+			padding-left: 0	
+	
+	.contacts
+		padding-top: 40px
+		input,button
+			margin-top: 5px
+
+	.adress
+		width: 200px
+		height: 200px
+		top: 50px
+		left: calc(50% - 100px)
+		line-height: 1em
+		h4
+			margin: 5px 0
+	
+		&:after
+			top: 188px
+			left: calc(50% - 40px)
+
+	.logo-footer
+		top: 270px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+	.adress
+		width: 180px
+		height: 180px
+		top: 25px
+		left: calc(50% - 90px)
+		line-height: 1em
+		h4
+			margin: 3px 0
+	
+		&:after
+			top: 168px
+			left: calc(50% - 40px)
+
+	.logo-footer
+		top: 210px
+
+	.contacts-phone
+		padding-top: 50px
+	
+	body
+		margin-bottom : 65px
+
+	.last-row
+		height: 65px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
